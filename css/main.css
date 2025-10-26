@@ -96,31 +96,39 @@
 }
 
 
-/* === Publications page spacing === */
-body.publications .post-content ul {
-  list-style-type: disc;
-  margin-top: 0.8rem;
-  margin-bottom: 1.6rem;
-  padding-left: 1.4rem;
-}
-body.publications .post-content li {
-  margin-bottom: 0.6rem;
-  line-height: 1.6;
-}
-
-/* === Academic-style spacing for project lists === */
+/* === Academic-style spacing for Projects & Publications pages === */
 .post-content ul {
   list-style-type: disc;
   margin-top: 1rem;
-  margin-bottom: 1.8rem;   /* 每个项目块之间更宽松 */
-  padding-left: 1.4rem;    /* 左缩进一点点 */
+  margin-bottom: 1.8rem;   /* 每个条目块之间的距离 */
+  padding-left: 1.4rem;
 }
 
 .post-content li {
-  margin-bottom: 1rem;   /* 项目内部行距 */
-  line-height: 1.5;
+  margin-bottom: 0.8rem;   /* 条目内部行距 */
+  line-height: 1.7;
 }
 
+
+/* === Media page (simple academic list) === */
+body.media .post-content ul { list-style: none; padding-left: 0; margin: 1rem 0 2rem; }
+body.media .post-content li { margin-bottom: 1rem; line-height: 1.7; }
+body.media .post-content a { text-decoration: underline; }
+
+/* small badges */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--tertiary);
+  color: var(--primary);
+  margin-right: 6px;
+}
+.badge.award { background: #fff3c4; border: 1px solid #f0d97a; }   /* Award */
+.badge.talk  { background: #e6f0ff; border: 1px solid #b9d0ff; }   /* Talk  */
+.badge.workshop  { background: #eaf8f1; border: 1px solid #bfe9d2; }   /* Workshop  */
+.badge.visit  { background: ##ffb4d5; border: 1px solid ##5a0027; }   /* Visit  */
 
 
 

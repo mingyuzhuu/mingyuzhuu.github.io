@@ -95,40 +95,32 @@
   }
 }
 
-/* ===== Publications page ===== */
-.pubs-showcase { max-width: 1000px; margin: 0 auto 40px; padding-top: 10px; }
-.pubs-showcase h1 { font-size: 26px; margin-bottom: 18px; }
-.pubs-cards { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
-@media (max-width: 860px){ .pubs-cards { grid-template-columns: 1fr; } }
 
-.pub-card {
-  background: var(--entry);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 18px;
+/* === Publications page spacing === */
+body.publications .post-content ul {
+  list-style-type: disc;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  padding-left: 1.4rem;
 }
-.pub-title { font-size: 18px; margin: 6px 0 8px; }
-.pub-venue { color: var(--secondary); font-size: 14px; }
-.pub-authors { color: var(--secondary); font-size: 14px; }
-.pub-abs { color: var(--content); font-size: 14px; margin: 8px 0 6px; }
-.pub-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-.chip {
-  display: inline-block; padding: 4px 10px; border:1px solid var(--border);
-  border-radius: 999px; font-size: 13px; background: var(--code-bg);
+body.publications .post-content li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
 }
-.chip.sm { padding: 2px 8px; font-size: 12px; }
-.badge { display:inline-block; padding:2px 8px; font-size:12px; border-radius:999px; background: var(--tertiary); margin-right:6px;}
-.badge.oa { background: #e9fff1; border: 1px solid #b6f1cd; color: #147a3b; }
 
-.pubs-archive { max-width: 1000px; margin: 32px auto 80px; padding-top: 16px; border-top:1px solid var(--border); }
-.pubs-archive h2 { font-size: 22px; margin-bottom: 16px; }
-.pubs-year { font-size: 18px; margin: 16px 0 10px; }
-.pubs-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.pub-row { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--entry); }
-.row-left { color: var(--secondary); font-variant: all-small-caps; letter-spacing: .5px; display:flex; align-items: center; }
-.row-title { font-weight: 600; }
-.row-authors, .row-venue { color: var(--secondary); font-size: 14px; }
-.row-actions { margin-top: 6px; display:flex; gap:8px; flex-wrap: wrap; }
-@media (max-width: 720px){ .pub-row { grid-template-columns: 1fr; } .row-left { display:none; } }
+/* === Academic-style spacing for project lists === */
+.post-content ul {
+  list-style-type: disc;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;   /* 每个项目块之间更宽松 */
+  padding-left: 1.4rem;    /* 左缩进一点点 */
+}
+
+.post-content li {
+  margin-bottom: 1rem;   /* 项目内部行距 */
+  line-height: 1.5;
+}
+
+
 
 
